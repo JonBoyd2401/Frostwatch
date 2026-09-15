@@ -55,3 +55,5 @@ Contains fantasy violence, blood and dismemberment. Dialogue uses locally genera
 Report bugs through [Issues](https://github.com/JonBoyd2401/Frostwatch/issues), including the location, steps to reproduce, graphics preset and GPU model. Please remove personal information before attaching logs.
 
 See [credits](CREDITS.md) and [game license](GAME-LICENSE.md). This repository hosts the public download information; it does not distribute Unreal Engine source or the source files for licensed Fab artwork.
+
+![Castle courtyard lighting preview](Screenshots/castle-courtyard.png)
