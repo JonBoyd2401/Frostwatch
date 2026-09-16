@@ -1,0 +1,37 @@
+{
+  "snapshot_utc": "2026-09-16T06:44:06.600734+00:00",
+  "scope": "Available local Frostwatch-directory sessions and the confirmed original creation workspace (10 September new-chat); includes historical subagent/reviewer tasks and preliminary setup or ancillary work within these sessions. Not a clean per-feature meter; missing/deleted/remote logs are not covered.",
+  "sessions": 19,
+  "unique_response_records": 4034,
+  "tokens": {
+    "input_tokens": 516201488,
+    "cached_input_tokens": 504491520,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2206190,
+    "reasoning_output_tokens": 863046,
+    "total_tokens": 518407678
+  },
+  "by_model": {
+    "gpt-6-astra": {
+      "input_tokens": 506705704,
+      "cached_input_tokens": 495989760,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2190476,
+      "reasoning_output_tokens": 857120,
+      "total_tokens": 508896180
+    },
+    "codex-auto-review": {
+      "input_tokens": 9495784,
+      "cached_input_tokens": 8501760,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15714,
+      "reasoning_output_tokens": 5926,
+      "total_tokens": 9511498
+    }
+  },
+  "active_wall_seconds": 127315.60073399544,
+  "summed_task_seconds": 128046.60073399544,
+  "unfinished_task_records": 1,
+  "elapsed_calendar_seconds": 469164.60073399544,
+  "time_definition": "Union of recorded task-start/task-complete intervals, plus the current active task to the snapshot. Includes model/tool/build/test/wait time inside active turns. Excludes gaps between turns. Not GPU compute time or human labour hours. Unfinished historical tasks without an end are excluded."
+}

@@ -70,3 +70,7 @@ See [credits](CREDITS.md) and [game license](GAME-LICENSE.md). This repository h
 ## Creator credits and distribution
 
 Please read the [full creator credits](CREDITS.md) and [distribution notes](DISTRIBUTION.md). The Windows download includes both documents. Third-party work remains under its original licence; this is a free game download, not permission to extract and redistribute the asset library.
+
+## How this game was made
+
+This is an **AI-led development experiment under human direction**. AI performed most implementation; the human directed, challenged, playtested and drove bug fixes through many iterations. Read [the technical notes](TECHNICAL-NOTES.md) and [the development account, confirmed models, token burn and processing-time audit](AI-DEVELOPMENT.md). Third-party art and audio remain credited to their original creators.
