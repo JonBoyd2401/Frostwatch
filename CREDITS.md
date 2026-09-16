@@ -1,4 +1,10 @@
-# Frostwatch — The Last Ember, Native Edition
+# Frostwatch — The Last Ember: credits and third-party notices
+
+The current public preview is an Unreal Engine game. The contributor records below preserve both current credits and the earlier Godot edition's history. Godot engine notices, Piper narration and superseded character assets describe that earlier edition; they do not imply those components ship in the current Unreal build. Current dialogue, including inn tales, is rendered with Kokoro. The v0.4 packaged asset inventory excludes the old Piper tale recordings.
+
+Thank you to all artists, recordists, animators, tool authors and engine contributors listed here. Their work remains theirs; inclusion does not imply endorsement. See [DISTRIBUTION.md](DISTRIBUTION.md) for how the packaged game and its licensed components may be shared.
+
+## Historical native edition and retained asset credits
 
 Game code, world layout, quests, adapted animations, shaders, interface, and the remaining synthesized ambience/reward cues were created for this project. Human models and footsteps use the assets credited below. The native edition uses Godot 4.7.2 and its Vulkan Forward+ renderer.
 

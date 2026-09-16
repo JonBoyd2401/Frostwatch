@@ -66,3 +66,7 @@ Report bugs through [Issues](https://github.com/JonBoyd2401/Frostwatch/issues), 
 See [credits](CREDITS.md) and [game license](GAME-LICENSE.md). This repository hosts the public download information; it does not distribute Unreal Engine source or the source files for licensed Fab artwork.
 
 ![Castle courtyard lighting preview](Screenshots/castle-courtyard.png)
+
+## Creator credits and distribution
+
+Please read the [full creator credits](CREDITS.md) and [distribution notes](DISTRIBUTION.md). The Windows download includes both documents. Third-party work remains under its original licence; this is a free game download, not permission to extract and redistribute the asset library.
