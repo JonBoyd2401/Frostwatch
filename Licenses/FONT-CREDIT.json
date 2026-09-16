@@ -1,0 +1,10 @@
+{
+  "original": "Cormorant Garamond",
+  "designer": "Christian Thalmann",
+  "copyright": "Copyright 2015 The Cormorant Project Authors",
+  "source": "https://github.com/google/fonts/tree/main/ofl/cormorantgaramond",
+  "licence": "SIL Open Font License 1.1; see Cormorant-OFL.txt",
+  "modification": "Static weight 500 instance, renamed Frostwatch Story Serif. Original design credited to its authors.",
+  "original_sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0",
+  "output_sha256": "7931c18e94d9f55c6289d8f94980168ff94b9df7b8d0fc967fcfa9bdd442abb7"
+}

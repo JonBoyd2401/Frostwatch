@@ -1,4 +1,4 @@
-# Technical notes — Frostwatch preview 0.4
+# Technical notes — Frostwatch preview 0.5.1
 
 Frostwatch is an offline, single-player Windows fantasy adventure and an AI-led development experiment. This document describes the implemented preview, not a promise that every feature has production-game polish. See [AI development and measured resource use](AI-DEVELOPMENT.md), [performance](PERFORMANCE.md), [credits](CREDITS.md) and [distribution terms](DISTRIBUTION.md).
 
@@ -44,7 +44,9 @@ Frostwatch is an offline, single-player Windows fantasy adventure and an AI-led 
 
 ## Campaign, interface and persistence
 
-- Nine quest chains, a guided opening, journal, world map, interaction prompts, inventory/rewards and menus provide the adventure structure.
+- Ten journal chapters, a guided opening, world map, interaction prompts, inventory/rewards and menus provide the adventure structure. The Last Ember story connects Edrin, supplies, the three oaths, Ste, Stu and the returned watchfire. Progress-aware dialogue and aftermath preserve existing save IDs and completion gates.
+- A Canvas-rendered animated book presents the opening, found texts and journal; NPC dialogue slides up on parchment. A bundled Cormorant-derived serif face has its full SIL Open Font License and creator credit included. Long passages paginate with keyboard/mouse page controls; animations use real time while gameplay is paused.
+- Castle detailing uses seven instanced groups for paving, vault ribs, standards and the Crown ward, plus eleven bounded spotlights, two with shadows. The lantern directs a bounded, wall-aware spotlight toward the path and reduces close-range glare. Castle architecture remains unfinished.
 - Keyboard/mouse controls, rebinding, fullscreen/lower resolutions and quality settings are exposed in the interface. See README and the in-game controls screen for bindings.
 - Saves reside in Frostwatch/Saved/SaveGames; settings are under Frostwatch/Saved/Config. Release ZIPs contain no personal save or settings files. Back up Saved before manually upgrading.
 - Verification captures restore settings byte-for-byte and check save hashes. Local installation retains the previous executable/content packs for manual rollback.
@@ -58,8 +60,8 @@ Frostwatch is an offline, single-player Windows fantasy adventure and an AI-led 
 
 ## Testing and publication
 
-- The installed candidate passed 61 campaign, 50 runtime and 63 combat/respawn checks (174 total), plus route/interaction validation.
-- Eight revised graphics configurations passed memory/render-error acceptance. Performance results and screenshots are in PERFORMANCE.md. Cameras were stationary with controlled weather and active NPCs. Dragon benchmarking used diagnostic invulnerability to keep the encounter active; ordinary gameplay is unchanged. A death-menu benchmark was rejected.
+- The 0.5.1 package passed 71 campaign, 50 runtime and 72 combat/contact checks (193 total). The installed version repeated all 121 campaign/runtime checks. Both existing saves and settings remained byte-identical during installation.
+- Current castle/lantern captures passed memory/render-error acceptance. Performance results and screenshots are in PERFORMANCE.md. These captures use stationary cameras, controlled weather and frozen NPC simulation. Long-session travel and active castle combat measurements remain outstanding. Book/page animation and text fit were checked separately, including a diagnostic second page and three viewport resolutions.
 - Packaged content uses Unreal Pak/IoStore files. Runtime payload hashes match the verified local installation. ZIP integrity is checked and SHA-256 checksums accompany the download; GitHub upload digests are verified before publication.
 - The download includes the runtime, launcher, Visual C++ redistributable and player/technical/credit documents. Editor tools, source art, personal saves/settings, debug symbols and build logs are excluded. Cooked configuration checks confirm private editor settings are absent.
 - This is an unsigned development preview. It has been measured on one laptop; broad GPU/driver/platform compatibility, long-session stability and exhaustive playthrough coverage are not established. No multiplayer, console, Mac, Linux, mobile or browser build is supplied.

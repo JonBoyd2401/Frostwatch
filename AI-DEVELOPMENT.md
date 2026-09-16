@@ -67,3 +67,7 @@ The audit reads local session metadata, per-response `token_usage_record` entrie
 The selected scope includes Frostwatch working directories and the confirmed original creation workspace. It includes historical subordinate/reviewer activity and preliminary setup or ancillary work inside those sessions. It is therefore a **recorded project-associated total**, not a perfectly isolated game-only meter. Missing, deleted, remote or unrecorded sessions cannot be counted. This is a reproducible local-log snapshot, not an independently audited end-to-end labour/cost study.
 
 Only aggregate, sanitised metrics are published in [DEVELOPMENT-METRICS.json](DEVELOPMENT-METRICS.json). Raw conversation logs, private prompts, account details and local file paths are not published.
+
+## Scope of the 0.5.1 update
+
+The continuing human-directed, AI-led iteration added the connected story, parchment/book interface, castle atmosphere and revised lantern. The human requested and challenged the visual direction; AI implemented, built, tested and documented the changes. The usage figures above and DEVELOPMENT-METRICS.json remain the explicitly dated 2026-09-16 06:44 UTC audit snapshot. They exclude later work, including this release preparation; they are not a current lifetime total. No additional token count, processing duration or model identity is inferred without an audited record.

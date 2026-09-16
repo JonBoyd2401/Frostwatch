@@ -166,3 +166,7 @@ Seven voice profiles use the British English `bm_daniel`, `bm_fable`, `bm_george
 Kokoro's linked model card additionally acknowledges Koniwa (CC BY 3.0) and the SIWIS corpus (CC BY 4.0) as training-data sources, with links to their original publications. The model card and license are preserved with the authoring resources.
 
 Frostwatch uses Unreal® Engine. Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere. Unreal® Engine, Copyright 1998–2026, Epic Games, Inc. All rights reserved.
+
+## Parchment and book typography — 16 September 2026
+
+**Cormorant Garamond**, designed by **Christian Thalmann**, Copyright 2015 The Cormorant Project Authors. Source: https://github.com/google/fonts/tree/main/ofl/cormorantgaramond . Licensed under the **SIL Open Font License 1.1**. Frostwatch embeds a static medium-weight instance renamed **Frostwatch Story Serif**; the original copyright is retained. The full licence accompanies the game in `Licenses/Cormorant-OFL.txt`. The original font, licence, transformation script and source/output hashes are retained in the authoring project. No paid font service was used. The parchment, book, ornaments and animation are drawn by the game's interface code.
