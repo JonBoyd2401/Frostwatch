@@ -133,7 +133,7 @@ Acquired from the user's already owned Fab library, with no purchase in this pas
 
 - **Procedural Nature Seasons Pack — PurePolygons:** selected winter trees, shrubs, grass, snow banks, fences, mountains, terrain textures and snowfall particles.
 - **Light Foliage — MYTHRA TECH:** selected ground foliage and shrubs.
-- **Water Materials — tharlevfx:** lake and waterfall materials and their dependencies.
+- **Water Materials — tharlevfx:** lake and waterfall materials and their dependencies. The revised Widow's Veil also uses the pack's original waterfall base and arc meshes, matching material instances, a river surface, foam and splash emitters, adapted from its example assembly at a smaller scale. Its rectangular demonstration surrounds are replaced with terrain fitting and scanned rocks.
 - **Hebe Fountain — Pierogi3:** assembled fountain, animated streams, ripples and the supplied splash sound.
 - **Dynamic Sky & Light Manager — Procedural World Lab:** selected sky panoramas and cloud texture. Its incompatible controller is not used; the game supplies its own clock-driven controller.
 
@@ -142,6 +142,14 @@ These assets remain subject to their respective Fab licence terms. Their source 
 ## Recorded sword contact — 15 September 2026
 
 Ben Jaszczak and Brian Nelson, **Medieval sound effects: Weapon impacts / Weapon Textures**, CC0: https://opengameart.org/node/146863 and https://opengameart.org/content/medieval-sound-effects-weapon-textures . Four swings, six clashes and four impacts were selected from recordings, converted to mono 48 kHz PCM, trimmed, faded and levelled. These replace the previous combat tones.
+
+## Mountain Dragon — 15 September 2026
+
+**Quadruped Fantasy Creatures**, PROTOFACTOR INC, confirmed owned in the user's Fab library and imported without purchase. Listing: https://www.fab.com/listings/52d686b6-1180-4f26-901f-ce3c69a14767 . Selected Mountain Dragon mesh, physics, textures and original flight, breath and death animations are used for Ashwing and Rimefang, with game-specific material tinting. This asset retains its applicable Fab licence; it is not CC0. Other creatures and demonstration maps from the pack are excluded from the game integration.
+
+## Waterfall and stream recordings — 15 September 2026
+
+Blender Foundation, **Ambient Mountain, River, Wind and Forest and Waterfall (Yo Frankie!)**, submitted by Lamoot. Source: https://opengameart.org/content/ambient-mountain-river-wind-and-forest-and-waterfall . Licensed under CC BY 3.0: https://creativecommons.org/licenses/by/3.0/ . Selected waterfall and river recordings were downmixed to mono, crossfaded for looping and peak-normalised for positional ambience. Source and output hashes are recorded in SourceAssets/WaterfallAudio/LICENSE-SOURCES.json.
 
 ## Character dialogue — 15 September 2026
 

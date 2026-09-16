@@ -2,13 +2,22 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.3.0-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.4.0-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
+## New in 0.4
+
+- Rebuilt library waterfall, spray, foam and terrain basin.
+- Animated dragon models and softened flame effects.
+- Regional scenery and climate treatments.
+- Ordinary guard/orc respawns after 24 campaign hours, away from the player; named bosses stay defeated.
+- Revised Balanced shadows, sharper permitted textures and bounded system-RAM asset caching.
+- 174 packaged gameplay checks passed. See [measured performance and remaining limitations](PERFORMANCE.md).
+
 ## Install and play
 
-1. Open the release above and download **Frostwatch-Windows-v0.3.0-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.4.0-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -42,7 +51,7 @@ The in-game controls screen shows the full bindings and supports rebinding. Buff
 
 ## Performance and saves
 
-First launch uses a 1280 × 720 window, Balanced quality, 85% render resolution and a 60 FPS ceiling. Fullscreen, resolution and quality can be changed in Settings. Performance mode is available for lower-powered GPUs. Forest performance remains a known limitation. The initial shader/asset load can take longer on a hard disk.
+First launch uses a 1280 × 720 window, Balanced quality, 85% render resolution and a 60 FPS ceiling. Fullscreen, resolution and quality can be changed in Settings. Performance mode is available for lower-powered GPUs. This update improves woodland performance on the development laptop; demanding areas can still drop below 60 FPS. The initial shader/asset load can take longer on a hard disk.
 
 Windows 64-bit and a DirectX 12-capable GPU with Shader Model 6 support are required by this build. Compatibility outside the development laptop has not yet been established. No Mac, Linux, mobile or browser build is included.
 
