@@ -2,11 +2,13 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.4-preview)**
+**[Download the available Windows preview — 0.5.3](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.3-preview)**
+
+**0.5.4 publication status:** verified and installed on the development laptop; the downloadable update is pending. GitHub rejected two complete archive uploads with HTTP 500 (“Error saving asset”). The 0.5.4 draft is not public; the link above retains the working 0.5.3 download. The changes and measurements below document the verified 0.5.4 candidate.
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.4
+## Verified for 0.5.4 — download pending
 
 - Recovered supply crates disappear from their collection sites. After Captain Rowan accepts the deliveries, both crates appear in Hearthmere and explain their new purpose when inspected.
 - Rescued Edrin returns to Hearthmere after the player leaves the prison area. He follows a daytime work routine and an evening inn route using the existing character and animations.
@@ -48,7 +50,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.4-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.3-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.

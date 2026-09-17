@@ -33,3 +33,7 @@ The first clear village capture spilled 44.95 MiB of GPU memory. Smaller streami
 ## Remaining work and cost
 
 No new art downloads, purchases, paid services or voice recordings were required. Existing creator credits remain applicable. Castle/prison architecture, terrain and water authoring, further aftermath changes, broader NPC/prop interaction, controller and audio coverage, full fresh/old-save playthroughs and external player testing remain in RELEASE-READINESS.md.
+
+## Publication status
+
+The 0.5.4 archive passed CRC and SHA256 verification, but GitHub rejected two full uploads with HTTP 500, “Error saving asset”. The release remains an unpublished draft. Public documentation records the update; the download link retains working 0.5.3. The verified local 0.5.4 ZIP and installed game are intact. Old local release archives are retained until the new download is public.
