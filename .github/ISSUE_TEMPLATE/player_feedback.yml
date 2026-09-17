@@ -1,0 +1,34 @@
+name: Share playtest feedback
+description: Tell us what playing Frostwatch was actually like.
+title: "[Playtest] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version and time played
+    validations:
+      required: true
+  - type: textarea
+    id: journey
+    attributes:
+      label: Your journey
+      description: Was this a fresh or existing save? Where did you reach? Did anyone explain what to do, or did you work it out yourself?
+    validations:
+      required: true
+  - type: textarea
+    id: understanding
+    attributes:
+      label: Goals and guidance
+      description: What did you think your goal was? Where did you become lost or unsure?
+  - type: textarea
+    id: experience
+    attributes:
+      label: What worked and what did not?
+      description: Describe memorable exploration, combat or story moments, and anything frustrating or uncomfortable. What would make you continue or stop?
+    validations:
+      required: true
+  - type: textarea
+    id: performance
+    attributes:
+      label: Performance and setup
+      description: Include PC specifications, graphics settings and any repeatable stutters, crashes or loading problems. Please report a reproducible blocker separately using the game-problem form.

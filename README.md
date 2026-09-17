@@ -2,11 +2,20 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.1-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.2-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.1
+## New in 0.5.2
+
+- Short humanoid animation transitions soften changes between movement, attacks and reactions while preserving the incoming animation clock and combat timing.
+- Settings → Reading and motion offers 100%, 125% or 150% story-body text and an option to disable book/page and dialogue-slide animation. Larger body text wraps onto additional pages.
+- Performance diagnostics now retain the complete post-warmup capture, including p99, worst frames and stall counts, rather than only the final camera interval.
+- 199 packaged gameplay checks passed, plus a scripted live parry/counter encounter and a sustained woodland-to-castle-approach capture. This does not establish whole-game release readiness.
+
+See the [remaining release programme](ROADMAP.md) and [player-test brief](PLAYER-TEST-BRIEF.md).
+
+## Previously added in 0.5.1
 
 - A connected Last Ember story linking Edrin, Rowan, the three oaths and the rulers of Frostwatch, with progress-aware dialogue and an aftermath.
 - Animated parchment books for the opening, found texts and journal; NPC dialogue slides up on parchment with spoken lines.
@@ -20,7 +29,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.1-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.2-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -29,7 +38,7 @@ If Windows reports a missing Visual C++ runtime, run the included **Prerequisite
 
 ## Minimum and recommended PC specifications
 
-These are **provisional requirements for preview 0.5.1**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+These are **provisional requirements for preview 0.5.2**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
 
 | Component | Minimum — provisional | Recommended — provisional |
 | --- | --- | --- |
@@ -44,7 +53,7 @@ These are **provisional requirements for preview 0.5.1**, not certified compatib
 
 The current download is approximately **2.08 GB**, and the extracted files occupy approximately **2.37 GB** before saves, logs and caches. Unreal Editor is not required. The Visual C++ runtime installer is included; internet access is needed to download the game, but gameplay is offline.
 
-On the tested laptop, controlled 720p Balanced captures averaged about **77–79 FPS in the castle hall/courtyard** and **37–41 FPS in the woodland night/close-character checks**. These stationary captures freeze NPC simulation; they do not establish a minimum frame rate during travel or combat. Recommended hardware has not been benchmarked, and 1080p/60 FPS is not yet guaranteed. See [performance measurements and limitations](PERFORMANCE.md).
+In the preceding 0.5.1 build, controlled 720p Balanced captures averaged about **77–79 FPS in the castle hall/courtyard** and **37–41 FPS in the woodland night/close-character checks**. These stationary captures freeze NPC simulation; they do not establish a minimum frame rate during travel or combat. Recommended hardware has not been benchmarked, and 1080p/60 FPS is not yet guaranteed. See [performance measurements and limitations](PERFORMANCE.md).
 
 These specifications are for playing Frostwatch, not running the Unreal Editor. Epic's [rendering feature requirements](https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine) explain the underlying DirectX/Shader Model requirements; they do not certify this game's performance.
 
@@ -93,3 +102,5 @@ See the [full creator credits](CREDITS.md), [distribution notes](DISTRIBUTION.md
 ![Animated opening book](Screenshots/opening-book.png)
 ![Parchment conversation](Screenshots/parchment-dialogue.png)
 ![Castle great hall and Crown ward](Screenshots/castle-hall.png)
+![Larger parchment dialogue at 960 by 540](Screenshots/large-dialogue.png)
+![Reading and motion settings](Screenshots/reading-settings.png)

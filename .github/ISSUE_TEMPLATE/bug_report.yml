@@ -1,0 +1,42 @@
+name: Report a game problem
+description: Help reproduce a gameplay, save, performance or presentation problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version
+      placeholder: For example, 0.5.2-preview
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: What went wrong?
+      options:
+        - Progress blocked or save lost
+        - Combat or movement
+        - Quest or dialogue
+        - Performance or crash
+        - Graphics or sound
+        - Controls or readability
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Location and steps to reproduce
+      description: Include what you expected, what happened, and whether it happens again.
+    validations:
+      required: true
+  - type: textarea
+    id: system
+    attributes:
+      label: PC and settings
+      description: Windows version, CPU, GPU and VRAM, system RAM, SSD/HDD, resolution and graphics preset. Do not include serial numbers or account details.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and evidence
+      description: Did you lose progress or have to stop? Screenshots or a short video help. Remove personal information before attaching logs; do not upload your entire Saved folder.

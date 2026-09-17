@@ -1,0 +1,31 @@
+# Player-first release programme
+
+Authorised 17 September 2026: complete the production recommendations economically, with no purchases. Reuse existing art, animation, audio, authoring and diagnostics. Prioritise a convincing complete journey over expanding scope. Do not label this programme complete solely because automated checks pass.
+
+## Work and acceptance ledger
+
+| Workstream | Required result | Current status |
+| --- | --- | --- |
+| First hour and guidance | Arrival, Rowan, first combat, discovery and meaningful reward understandable without coaching | Existing opening/story; uncoached player test outstanding |
+| Complete campaign | Fresh save reaches ending; older saves continue; objectives/rewards/world agree | Automated campaign coverage exists; full ordinary-play acceptance outstanding |
+| Combat motion | Continuous locomotion/action/reaction transitions, unchanged contact timing, recognisable openings | 0.5.2 short pose transitions passed 78 packaged checks and a live parry/counter sequence; broader enemy/animation review remains |
+| Enemy encounters | Distinct tactics, fair group pressure, readable commitment and recovery | Existing two-attacker limit/committed swing; further encounter review outstanding |
+| Sustained performance | Moving travel, riding, combat, loading and saving measured for spikes and streaming | 0.5.2 records whole-capture p95/p99/stalls; 91.5-second woodland/northern-road run measured; mounted travel and longer campaign profiles remain |
+| Castle and prison | Believable architecture, readable route, secure prison, meaningful exploration | Geometry/library inventory complete; structural authoring outstanding |
+| Terrain and water | Grounded scenery, road shoulders, upstream/downstream continuity, regional ground identity | Existing improvements; route-level art acceptance outstanding |
+| World consequences | Rescued people relocate, deliveries appear, restored places react consistently | Dialogue/flags exist; visible changes outstanding |
+| Save reliability | New/old saves, interrupted update, death/checkpoint, boss persistence and ordinary respawn tested | Regression checks exist; expanded release scenarios outstanding |
+| Interface/accessibility | Text size, reduced motion, shake/bob controls, subtitles, separate audio levels, clear failed-action feedback | 0.5.2 adds 100/125/150% story body text and reduced page/dialogue motion, verified at 960×540; audio/general-HUD controls remain |
+| Input | Keyboard/mouse complete; controller only advertised after full navigation/gameplay verification | Controller acceptance outstanding |
+| Audio | Recurring actions and major dialogue reviewed for matching contact, pronunciation and level | Recorded combat and synthetic dialogue exist; complete listening review outstanding |
+| Compatibility and external playtest | Uncoached new players and several real PCs tested | Requires real testers/hardware; cannot be certified on this laptop alone |
+| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.2 first readiness batch verified; subsequent release passes still required |
+
+## Cost and verification rules
+
+- No asset purchases, paid services, new hardware or paid testers without explicit financial approval.
+- Use D: for working assets/builds. Preserve saves and settings. Move obsolete output to DELETE-ME for manual removal.
+- Compile/test focused code changes before expensive cooking. Combine verified changes into release candidates to reduce repeated packaging and uploads.
+- Capture real gameplay evidence; keep stationary/frozen diagnostic measurements clearly labelled. Never claim whole-game FPS from one scene.
+- Keep installed 0.5.1 playable until a replacement passes verification. Publish completed candidates using PUBLIC-RELEASE-WORKFLOW.md.
+- External playtesting is an acceptance dependency, not something to fabricate or replace with AI-generated opinions. Prepare a reproducible test brief and record actual observations when available.

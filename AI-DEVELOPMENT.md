@@ -71,3 +71,7 @@ Only aggregate, sanitised metrics are published in [DEVELOPMENT-METRICS.json](DE
 ## Scope of the 0.5.1 update
 
 The continuing human-directed, AI-led iteration added the connected story, parchment/book interface, castle atmosphere and revised lantern. The human requested and challenged the visual direction; AI implemented, built, tested and documented the changes. The usage figures above and DEVELOPMENT-METRICS.json remain the explicitly dated 2026-09-16 06:44 UTC audit snapshot. They exclude later work, including this release preparation; they are not a current lifetime total. No additional token count, processing duration or model identity is inferred without an audited record.
+
+## 0.5.2 update
+
+The human authorised an economical player-first release programme. AI implemented and tested short humanoid pose transitions, reading preferences and extended performance diagnostics, and prepared the roadmap and playtest forms. Existing animation and font assets were reused; no new model or paid asset was introduced for these features. The token/time figures above remain the dated audit snapshot and exclude this later work. External human playtests have not been fabricated or counted as completed.

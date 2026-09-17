@@ -1,4 +1,4 @@
-# Technical notes — Frostwatch preview 0.5.1
+# Technical notes — Frostwatch preview 0.5.2
 
 Frostwatch is an offline, single-player Windows fantasy adventure and an AI-led development experiment. This document describes the implemented preview, not a promise that every feature has production-game polish. See [AI development and measured resource use](AI-DEVELOPMENT.md), [performance](PERFORMANCE.md), [credits](CREDITS.md) and [distribution terms](DISTRIBUTION.md).
 
@@ -69,3 +69,11 @@ Frostwatch is an offline, single-player Windows fantasy adventure and an AI-led 
 ## Known limitations and interpretation
 
 Landscape repetition, some shoreline geometry, grove roots/branches, reused animation and general composition still need work. A passing automated test establishes its specific assertions, not that the game is bug-free, balanced or AAA quality. The human review repeatedly exposed visible problems that automated checks missed. Frame rates vary with location, action, temperature, drivers and competing workloads. All third-party creators retain the rights stated in their licences.
+
+## 0.5.2 readiness batch
+
+Humanoids use a native single-sequence animation proxy with short blends from the last displayed local-bone pose. The incoming clip advances immediately; there is no second sequence evaluation. Compact-pose snapshots are invalidated when the required-bone mapping changes. Locomotion transitions use 180 ms and actions/reactions 90 ms. Dragons retain their previous animation player. This improves pose continuity; it is not a complete motion-matching system or a replacement for authored contact review.
+
+Reading settings persist in GameUserSettings.ini. Story-body sizes of 100/125/150 percent rewrap and paginate; reduced motion removes the page and dialogue-slide animation. Headings, chapter-selection controls and the general HUD are not globally resized by this option. Separate audio-volume and full controller work remain on the roadmap.
+
+Capture diagnostics additionally retain up to 120,000 post-warmup frame samples and report p99, worst frame, counts above 50/100 ms and peak dedicated-memory demotion. These metrics remain diagnostic-only. See PERFORMANCE.md for the actual moving test and its limits.
