@@ -27,6 +27,27 @@ Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led dev
 
 If Windows reports a missing Visual C++ runtime, run the included **Prerequisites/vc_redist.x64.exe**, then launch again. This preview is unsigned; use the download from this repository and the release's SHA-256 checksums to verify the file.
 
+## Minimum and recommended PC specifications
+
+These are **provisional requirements for preview 0.5.1**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+
+| Component | Minimum — provisional | Recommended — provisional |
+| --- | --- | --- |
+| Operating system | Windows 11, 64-bit | Windows 11, 64-bit |
+| Processor | Intel Core i7-8750H-class CPU or better | Intel Core i5-12400 / AMD Ryzen 5 5600-class CPU or better |
+| System memory | 16 GB RAM; not yet tested at this capacity | 32 GB RAM |
+| Graphics card | NVIDIA GeForce GTX 1060 with 3 GB dedicated VRAM or better | NVIDIA GeForce RTX 3060 with 12 GB dedicated VRAM, or comparable GPU with at least 8 GB VRAM |
+| Graphics support | DirectX 12 and Shader Model 6 support, with a compatible up-to-date driver | DirectX 12 and Shader Model 6 support, with a compatible up-to-date driver |
+| Free storage | 8 GB for download, extraction and working space; HDD supported on the tested laptop | 10 GB free on an SSD for faster loading and asset streaming |
+| Suggested starting settings | 1280 × 720, Performance preset; lower render scale if needed | 1920 × 1080, Balanced preset with adjustable render scale; unbenchmarked target |
+| Input / audio | Keyboard and mouse; speakers or headphones | Keyboard and mouse; headphones recommended |
+
+The current download is approximately **2.08 GB**, and the extracted files occupy approximately **2.37 GB** before saves, logs and caches. Unreal Editor is not required. The Visual C++ runtime installer is included; internet access is needed to download the game, but gameplay is offline.
+
+On the tested laptop, controlled 720p Balanced captures averaged about **77–79 FPS in the castle hall/courtyard** and **37–41 FPS in the woodland night/close-character checks**. These stationary captures freeze NPC simulation; they do not establish a minimum frame rate during travel or combat. Recommended hardware has not been benchmarked, and 1080p/60 FPS is not yet guaranteed. See [performance measurements and limitations](PERFORMANCE.md).
+
+These specifications are for playing Frostwatch, not running the Unreal Editor. Epic's [rendering feature requirements](https://dev.epicgames.com/documentation/unreal-engine/hardware-and-software-specifications-for-unreal-engine) explain the underlying DirectX/Shader Model requirements; they do not certify this game's performance.
+
 ## Controls
 
 | Action | Default control |
