@@ -77,3 +77,11 @@ Humanoids use a native single-sequence animation proxy with short blends from th
 Reading settings persist in GameUserSettings.ini. Story-body sizes of 100/125/150 percent rewrap and paginate; reduced motion removes the page and dialogue-slide animation. Headings, chapter-selection controls and the general HUD are not globally resized by this option. Separate audio-volume and full controller work remain on the roadmap.
 
 Capture diagnostics additionally retain up to 120,000 post-warmup frame samples and report p99, worst frame, counts above 50/100 ms and peak dedicated-memory demotion. These metrics remain diagnostic-only. See PERFORMANCE.md for the actual moving test and its limits.
+
+## 0.5.3 save reliability and combat feedback
+
+The original expedition schema and primary slot remain unchanged. Save writes serialize through Unreal's SaveGame API, verify the previous-generation slot before replacing the primary, then compare primary readback bytes. A missing/unreadable primary falls back to the `_Previous` slot. That can lose the latest changes; it does not guarantee survival of hardware failure affecting both copies. BeforeNewGame and BeforeImport snapshots are verified before replacement proceeds. Failure messages, retry and explicit quit-without-saving prevent a false success report.
+
+Save-store injection tests exercise real expedition serialization against controlled missing, unreadable and failed-write cases without using player save slots. Compact combat cues are separate from quest notifications. Pause/title spacing adapts to viewport height. No new paid assets, audio, models or external services were added.
+
+Performance/Balanced limit concurrent texture replacement memory to 16 MiB instead of 32 MiB; the 384 MiB streaming pool and texture quality settings remain unchanged. High/Epic retain their 64 MiB temporary budget. Native platform-slot tests use unique diagnostic names and retain their files outside the player save folder.

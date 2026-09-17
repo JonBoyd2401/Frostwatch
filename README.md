@@ -2,11 +2,20 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.2-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.3-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.2
+## New in 0.5.3
+
+- Verified save writes and a previous-generation recovery copy. Continue can recover a missing or unreadable primary save and explains when recent progress may be missing.
+- Failed saves no longer claim success. Save-and-quit offers retry or an explicit quit without saving; automatic save failures show a persistent warning. New game and legacy import require a verified backup before replacing a readable existing expedition.
+- Compact combat cues for hits, parries, blocks and guard breaks leave the action visible and keep quest guidance intact.
+- Pause/title action spacing now fits the complete menu at 960 × 540.
+- Performance/Balanced use smaller temporary texture-streaming batches for additional GPU-memory headroom, without reducing the texture pool or texture quality settings.
+- 225 packaged checks passed, including simulated storage failures and existing combat/campaign coverage, plus a scripted live parry/counter encounter. Full human playthrough and broader release acceptance remain outstanding.
+
+## Previously added in 0.5.2
 
 - Short humanoid animation transitions soften changes between movement, attacks and reactions while preserving the incoming animation clock and combat timing.
 - Settings → Reading and motion offers 100%, 125% or 150% story-body text and an option to disable book/page and dialogue-slide animation. Larger body text wraps onto additional pages.
@@ -29,7 +38,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.2-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.3-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -38,7 +47,7 @@ If Windows reports a missing Visual C++ runtime, run the included **Prerequisite
 
 ## Minimum and recommended PC specifications
 
-These are **provisional requirements for preview 0.5.2**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+These are **provisional requirements for preview 0.5.3**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
 
 | Component | Minimum — provisional | Recommended — provisional |
 | --- | --- | --- |

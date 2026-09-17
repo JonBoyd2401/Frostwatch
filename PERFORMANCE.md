@@ -46,3 +46,11 @@ Architecture, terrain/road repetition, shoreline transitions, abrupt enemy anima
 ![Castle courtyard](Screenshots/castle-courtyard.png)
 ![Great hall](Screenshots/castle-hall.png)
 ![Daylight aerial view showing remaining architecture work](Screenshots/castle-aerial.png)
+
+## 0.5.3 scope
+
+The first combat review recorded 9.293 MiB of transient GPU-memory demotion and failed resource acceptance. Reducing temporary texture replacement memory from 32 to 16 MiB passed the same review with no demotion under a nearly identical roughly 2,009 MiB GPU budget. The texture pool and quality settings are unchanged. The smaller batch is now the Performance/Balanced default. The 24 screenshot captures in the combat review create blocking stalls and are not a gameplay FPS benchmark.
+
+A final moving-route test on the Omen i7-8750H / GTX 1060 3 GB / 32 GB RAM used Balanced, 1280 × 720, 85% render scale, uncapped, live NPCs, controlled daylight and scripted benchmark-invulnerable movement. After eight seconds of warmup it recorded 91.4 seconds and approximately 274 metres to the graphics snapshot. Mean 67.7 FPS; p95 19.40 ms; p99 22.66 ms; worst 95.46 ms; 1 frames above 50 ms and 0 above 100 ms. Peak recorded demotion was zero. This is one route, not an entire-game or thermal-endurance guarantee, and not a controlled claim of improved FPS against a previous release.
+
+Save writes now include backup and readback I/O. Capture mode disables normal autosaving, so this moving test does not measure save latency. Packaged storage regression tests separately exercised real diagnostic-slot I/O and simulated failures. Older figures above remain dated 0.5.2/0.5.1 measurements.

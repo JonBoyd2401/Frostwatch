@@ -75,3 +75,7 @@ The continuing human-directed, AI-led iteration added the connected story, parch
 ## 0.5.2 update
 
 The human authorised an economical player-first release programme. AI implemented and tested short humanoid pose transitions, reading preferences and extended performance diagnostics, and prepared the roadmap and playtest forms. Existing animation and font assets were reused; no new model or paid asset was introduced for these features. The token/time figures above remain the dated audit snapshot and exclude this later work. External human playtests have not been fabricated or counted as completed.
+
+## 0.5.3 update
+
+Continuing the human-authorised readiness programme, AI implemented save verification/recovery, failure feedback, compact combat cues and adaptive pause/title spacing. Existing assets were reused. The token and processing-time figures remain the explicitly dated audit above; they do not include this later work. Automated checks and scripted play are not represented as external human playtesting.
