@@ -2,11 +2,21 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.3-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.4-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.3
+## New in 0.5.4
+
+- Recovered supply crates disappear from their collection sites. After Captain Rowan accepts the deliveries, both crates appear in Hearthmere and explain their new purpose when inspected.
+- Rescued Edrin returns to Hearthmere after the player leaves the prison area. He follows a daytime work routine and an evening inn route using the existing character and animations.
+- Existing save flags reconstruct these changes; a fresh expedition restores the original prisoner and supply locations. Rescued Edrin remains available for conversation even when an older save lacks the jailer defeat record.
+- Balanced has more GPU-memory headroom through a smaller Lumen lighting cache and smaller temporary streaming batches, retaining Lumen and the existing material texture budget.
+- 245 packaged checks passed. A live capture also verified Edrin moving after his return. Automated tests do not replace a full ordinary-play campaign or an external player test.
+
+See the [world-consequence verification notes](WORLD-CONSEQUENCES.md), [village before delivery](Screenshots/supplies-before-delivery.png), [delivered supplies](Screenshots/supplies-after-delivery.png) [returned Edrin](Screenshots/edrin-returned.png) and [Edrin at the inn](Screenshots/edrin-at-the-inn.png).
+
+## Previously added in 0.5.3
 
 - Verified save writes and a previous-generation recovery copy. Continue can recover a missing or unreadable primary save and explains when recent progress may be missing.
 - Failed saves no longer claim success. Save-and-quit offers retry or an explicit quit without saving; automatic save failures show a persistent warning. New game and legacy import require a verified backup before replacing a readable existing expedition.
@@ -38,7 +48,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.3-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.4-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -47,7 +57,7 @@ If Windows reports a missing Visual C++ runtime, run the included **Prerequisite
 
 ## Minimum and recommended PC specifications
 
-These are **provisional requirements for preview 0.5.3**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+These are **provisional requirements for preview 0.5.4**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
 
 | Component | Minimum — provisional | Recommended — provisional |
 | --- | --- | --- |

@@ -85,3 +85,9 @@ The original expedition schema and primary slot remain unchanged. Save writes se
 Save-store injection tests exercise real expedition serialization against controlled missing, unreadable and failed-write cases without using player save slots. Compact combat cues are separate from quest notifications. Pause/title spacing adapts to viewport height. No new paid assets, audio, models or external services were added.
 
 Performance/Balanced limit concurrent texture replacement memory to 16 MiB instead of 32 MiB; the 384 MiB streaming pool and texture quality settings remain unchanged. High/Epic retain their 64 MiB temporary budget. Native platform-slot tests use unique diagnostic names and retain their files outside the player save folder.
+
+## 0.5.4 persistent world consequences
+
+A per-world cache associates the two existing supply interactables with their existing crate actors by mesh and proximity. Quest flags select uncollected, carried or delivered presentation; no additional scenery is spawned. Delivered props use static-world traces and their mesh bounds to align their base with the ground. Hidden collection targets are excluded from interaction and HUD prompts.
+
+Edrin's rescued flag reconstructs his Hearthmere placement on loading. During play, relocation waits until the player is outside the prison area and has closed menus. His inn route is computed once against static collision in a bounded Hearthmere grid and cached for reuse, with extra capsule clearance and a floor-height path through the west doorway. Fresh expeditions reset original transforms and routines. No save schema migration or new art/audio purchase is required. The new crate inspection text has no NPC recording; existing character speech is retained.

@@ -10,16 +10,16 @@ Authorised 17 September 2026: complete the production recommendations economical
 | Complete campaign | Fresh save reaches ending; older saves continue; objectives/rewards/world agree | Automated campaign coverage exists; full ordinary-play acceptance outstanding |
 | Combat motion | Continuous locomotion/action/reaction transitions, unchanged contact timing, recognisable openings | 0.5.2 short pose transitions passed 78 packaged checks and a live parry/counter sequence; broader enemy/animation review remains |
 | Enemy encounters | Distinct tactics, fair group pressure, readable commitment and recovery | Existing two-attacker limit/committed swing; further encounter review outstanding |
-| Sustained performance | Moving travel, riding, combat, loading and saving measured for spikes and streaming | 0.5.2 records whole-capture p95/p99/stalls; 91.5-second woodland/northern-road run measured; 0.5.3 also verifies 16 MiB temporary streaming batches with zero recorded demotion in the fight and moving route; mounted travel and longer campaign profiles remain |
+| Sustained performance | Moving travel, riding, combat, loading and saving measured for spikes and streaming | 0.5.2 records whole-capture p95/p99/stalls; 91.5-second woodland/northern-road run measured; 0.5.3 also verifies 16 MiB temporary streaming batches with zero recorded demotion in the fight and moving route; 0.5.4 adds static supply rendering, a 1152-pixel Balanced lighting cache and 8 MiB temporary batches, with a verified moving-route regression; mounted travel and longer campaign profiles remain |
 | Castle and prison | Believable architecture, readable route, secure prison, meaningful exploration | Geometry/library inventory complete; structural authoring outstanding |
 | Terrain and water | Grounded scenery, road shoulders, upstream/downstream continuity, regional ground identity | Existing improvements; route-level art acceptance outstanding |
-| World consequences | Rescued people relocate, deliveries appear, restored places react consistently | Dialogue/flags exist; visible changes outstanding |
+| World consequences | Rescued people relocate, deliveries appear, restored places react consistently | 0.5.4 verifies collected/delivered supply props, Edrin returning, collision-aware inn travel and old/new-save reconstruction; further aftermath changes remain |
 | Save reliability | New/old saves, interrupted update, death/checkpoint, boss persistence and ordinary respawn tested | 0.5.3 packaged checks verify writes, previous-generation recovery, simulated storage failures and real diagnostic-slot I/O; full ordinary-play and interruption scenarios remain |
 | Interface/accessibility | Text size, reduced motion, shake/bob controls, subtitles, separate audio levels, clear failed-action feedback | 0.5.2 adds 100/125/150% story body text and reduced page/dialogue motion, verified at 960×540; audio/general-HUD controls remain |
 | Input | Keyboard/mouse complete; controller only advertised after full navigation/gameplay verification | Controller acceptance outstanding |
 | Audio | Recurring actions and major dialogue reviewed for matching contact, pronunciation and level | Recorded combat and synthetic dialogue exist; complete listening review outstanding |
 | Compatibility and external playtest | Uncoached new players and several real PCs tested | Requires real testers/hardware; cannot be certified on this laptop alone |
-| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.3 save/feedback/headroom batch verified; subsequent release passes still required |
+| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.4 consequences/headroom batch verified and installed; matching publication accompanies this pass; subsequent release work remains |
 
 ## Cost and verification rules
 

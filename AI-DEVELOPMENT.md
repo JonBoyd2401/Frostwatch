@@ -79,3 +79,7 @@ The human authorised an economical player-first release programme. AI implemente
 ## 0.5.3 update
 
 Continuing the human-authorised readiness programme, AI implemented save verification/recovery, failure feedback, compact combat cues and adaptive pause/title spacing. Existing assets were reused. The token and processing-time figures remain the explicitly dated audit above; they do not include this later work. Automated checks and scripted play are not represented as external human playtesting.
+
+## 0.5.4 update
+
+AI implemented and verified visible supply-delivery and rescued-mentor consequences under the human's ongoing direction to complete the readiness programme economically. Existing assets and synthetic character voices were retained. The earlier token/processing-time audit remains dated and excludes this later work; no new total is inferred. Scripted diagnostics are not external human playtesting.
