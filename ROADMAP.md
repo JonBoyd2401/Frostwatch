@@ -19,7 +19,7 @@ Authorised 17 September 2026: complete the production recommendations economical
 | Input | Keyboard/mouse complete; controller only advertised after full navigation/gameplay verification | Controller acceptance outstanding |
 | Audio | Recurring actions and major dialogue reviewed for matching contact, pronunciation and level | Recorded combat and synthetic dialogue exist; complete listening review outstanding |
 | Compatibility and external playtest | Uncoached new players and several real PCs tested | Requires real testers/hardware; cannot be certified on this laptop alone |
-| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.4 consequences/headroom batch verified and installed; matching docs are public; runtime publication is blocked by repeated GitHub upload HTTP 500 errors; public download remains 0.5.3 |
+| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.4 consequences/headroom batch verified and installed; matching runtime and docs published as 0.5.4 after the GitHub upload succeeded on 18 September; subsequent release work remains |
 
 ## Cost and verification rules
 

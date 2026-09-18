@@ -36,4 +36,4 @@ No new art downloads, purchases, paid services or voice recordings were required
 
 ## Publication status
 
-The 0.5.4 archive passed CRC and SHA256 verification, but GitHub rejected two full uploads with HTTP 500, “Error saving asset”. The release remains an unpublished draft. Public documentation records the update; the download link retains working 0.5.3. The verified local 0.5.4 ZIP and installed game are intact. Old local release archives are retained until the new download is public.
+Published as v0.5.4-preview on 18 September 2026 after retrying the earlier GitHub server errors. Uploaded asset digests match the verified local files.
