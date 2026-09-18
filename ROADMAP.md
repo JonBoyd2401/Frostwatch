@@ -20,7 +20,7 @@ Authorised 17 September 2026: complete the production recommendations economical
 | Input | Keyboard/mouse complete; controller only advertised after full navigation/gameplay verification | Controller acceptance outstanding |
 | Audio | Recurring actions and major dialogue reviewed for matching contact, pronunciation and level | Recorded combat and synthetic dialogue exist; complete listening review outstanding |
 | Compatibility and external playtest | Uncoached new players and several real PCs tested | Requires real testers/hardware; cannot be certified on this laptop alone |
-| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.7 water/caves candidate verified and installed; publication and anonymous checksum checks must complete before this batch is closed |
+| Publication | Verified runtime, matching screenshots/docs, credits, checksums and honest known issues on GitHub | 0.5.7 water/caves batch verified, installed and published on 18 September; anonymous release, asset digests and downloaded checksum checks passed; broader world art and player acceptance remain |
 
 ## Cost and verification rules
 
