@@ -1,4 +1,4 @@
-# Performance — preview 0.5.2
+# Performance — preview 0.5.8
 
 ## New moving and combat checks
 
@@ -74,3 +74,32 @@ The road material adds two texture samples using existing textures; 200 decorati
 On the development Omen, Balanced, 1280 × 720, 85% render scale, uncapped with the live world enabled: the woodland/northern-road run covered 287.9 metres and recorded 91.5 seconds after warmup. Mean 71.0 FPS, p95 18.83 ms, p99 21.86 ms, worst 109.13 ms; 2 frames above 50 ms, 1 above 100 ms, peak recorded GPU-memory demotion 0.00 MiB. These are whole-capture results. Separate stationary cave/water views passed resource guards. The route is not a moving cave endurance test, full-world benchmark or other-hardware guarantee.
 
 The close view directly beneath the waterfall averaged 44.7 FPS (p95 24.26 ms), with no recorded over-budget state in that capture. The water layers are a heavier local view than the cave interiors. An earlier rejected candidate recorded 230.46 MiB of peak GPU-memory demotion on the moving route. The accepted run above follows bounded cave draw distances and reduced per-section Lumen card counts; the initial failure is retained locally rather than treated as a passing run.
+
+## 0.5.8 livestock regression
+
+On the same Omen (i7-8750H, GTX 1060 3 GB, 32 GB RAM), Balanced, 1280 × 720, 85% render scale, uncapped, controlled daylight and live NPC simulation, the same stationary farm camera was measured before and after the herd addition. Measurements exclude the first eight seconds. No asset builds ran during these captures.
+
+| Whole-capture measurement | Installed 0.5.7 | Livestock 0.5.8 |
+| --- | ---: | ---: |
+| Measured seconds | 51.5 | 51.5 |
+| Mean FPS | 39.9 | 39.8 |
+| p95 frame time, ms | 28.10 | 27.91 |
+| p99 frame time, ms | 31.08 | 30.41 |
+| Peak GPU-memory demotion, MiB | 0.00 | 0.00 |
+
+The farm is a dense local view; the herd and NPC poses vary between runs. These single runs do not establish a statistically reliable FPS improvement.
+
+Two woodland/northern-road moving runs used the same settings and scripted route. The repeat used the installed identical payload, following the first candidate-package run. No rendering settings or assets changed between these runs.
+
+| Whole-route measurement | First run | Repeat |
+| --- | ---: | ---: |
+| Measured seconds | 91.5 | 91.5 |
+| Mean FPS | 70.1 | 66.0 |
+| p95 frame time, ms | 18.93 | 19.94 |
+| p99 frame time, ms | 22.33 | 23.09 |
+| Worst frame, ms | 302.86 | 295.61 |
+| Frames above 50 ms | 3 | 2 |
+| Frames above 100 ms | 1 | 2 |
+| Peak GPU-memory demotion, MiB | 3.84 | 2.91 |
+
+Both runs contain brief demotion and hitches; these remain unresolved preview limitations. Neither ended in an over-budget state. The final-window GPU budgets were 1990.3 and 2017.9 MiB respectively, so these are not identical resource conditions. No specific cause or performance improvement is inferred. These are limited regression routes, not whole-map, mounted-travel, saving, thermal-endurance or other-hardware acceptance. Diagnostic capture mode disables normal autosaves.

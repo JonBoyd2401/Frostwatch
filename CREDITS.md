@@ -170,3 +170,11 @@ Frostwatch uses Unreal® Engine. Unreal® is a trademark or registered trademark
 ## Parchment and book typography — 16 September 2026
 
 **Cormorant Garamond**, designed by **Christian Thalmann**, Copyright 2015 The Cormorant Project Authors. Source: https://github.com/google/fonts/tree/main/ofl/cormorantgaramond . Licensed under the **SIL Open Font License 1.1**. Frostwatch embeds a static medium-weight instance renamed **Frostwatch Story Serif**; the original copyright is retained. The full licence accompanies the game in `Licenses/Cormorant-OFL.txt`. The original font, licence, transformation script and source/output hashes are retained in the authoring project. No paid font service was used. The parchment, book, ornaments and animation are drawn by the game's interface code.
+
+## Village livestock — 18 September 2026
+
+**0 A.D. livestock**, **Wildfire Games** (https://www.wildfiregames.com/), provides the cattle and pig meshes, skins, and idle, walking and feeding animations. Source: https://github.com/0ad/0ad/tree/master/binaries/data/mods/public/art . The cattle sources identify **Daniel Morgado**, and the pig sources identify **Stanislas Daniel Claude Dolcini**, as their authors. These assets are licensed under **Creative Commons Attribution-ShareAlike 3.0 Unported**, https://creativecommons.org/licenses/by-sa/3.0/ . Frostwatch's adaptations repair legacy COLLADA texture semantics, smooth the silhouettes, convert the rigs and animations to FBX, and adjust materials, scale and playback speed for Unreal. Those adapted assets retain CC BY-SA 3.0; they are not covered by the restrictions on unrelated Fab content.
+
+**Sheep (rigged, textured and animated)** by **p0ss**, https://opengameart.org/content/sheep-rigged-textured-and-animated , supplies the sheep mesh, packed texture and original animation clips. The creator credits the boar base texture to **titus tscharntke**, from https://opengameart.org/content/woodland-animals-texture-pack . Licensed under **CC BY-SA 3.0**, https://creativecommons.org/licenses/by-sa/3.0/ . Frostwatch selects one wool variant, reconnects the packed texture, converts the rig and three animations to FBX, and adjusts the material and scale. The adapted sheep assets retain the same licence. These creators do not endorse Frostwatch.
+
+No animal assets were purchased.

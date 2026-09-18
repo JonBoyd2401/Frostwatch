@@ -105,3 +105,13 @@ The existing masked road material uses temporal coverage for its edge, four text
 ## 0.5.7 water and cave construction
 
 Rounded cave shells are generated from the existing connection graph using an implicit surface and marching tetrahedra, split into independently bounded sections: 270,096 triangles across the three areas. Triplanar rock colour/normal sampling uses existing pack textures. New collision follows the visible shells; the established floor and old backing collision are retained. A carved river modifies 558 heightfield samples; the bridge retains road travel. Existing foliage is fitted from retained original transforms to avoid repeated offset drift. The hidden passage table is staged as game data; travel validates proximity, combat/mount state and a floor/capsule-safe destination before moving. Discovery uses the existing flag list without a save schema change.
+
+## 0.5.8 village livestock
+
+Eighteen AFWLivestock actors share three skeletal models and nine animation sequences. Each animal chooses short goals within 1.1 metres of its home, turns before walking, checks world-static floor height/slope and sweeps its capsule when moving. Cattle use a wider capsule. Authoring places animals clear of the original farmer work routes and computes additional tending approaches with static-collider and herd-home clearance.
+
+Nearby livestock update normally; beyond 90 metres movement pauses and actor logic runs once per second. Skeletal poses update only when rendered, with update-rate optimisation enabled. Textures are capped at 1024 pixels. No new lights, save schema or player-data migration. Herd positions and ambient animation states reset when the world loads.
+
+Working herders/farmers pause near their route's livestock, face the nearest animal and trigger its feeding animation. A tending visit is counted once until the previous visit expires, not once per frame. Human tending currently reuses the standing idle pose; there is no bespoke hand-feeding animation, production economy or animal interaction menu. Existing evening/home routines and stable-hand horse recovery remain.
+
+Blender converts the credited CC BY-SA source assets; Unreal imports the skeletons, clips and explicit skeletal materials. Public Assets/Livestock contains the reusable adapted FBX files and textures, also included in the download. Unrelated licensed game assets remain subject to their own terms.

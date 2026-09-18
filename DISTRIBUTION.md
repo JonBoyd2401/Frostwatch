@@ -16,6 +16,8 @@ Ownership/library records and original acquisition terms remain relevant; an ass
 
 ## Open assets, recordings and voices
 
+Preview 0.5.8 adds cattle and pigs from Wildfire Games / 0 A.D. (credited authors Daniel Morgado and Stanislas Daniel Claude Dolcini) and the p0ss sheep, with its credited titus tscharntke texture base. These models, animations, textures and Frostwatch adaptations retain CC BY-SA 3.0. Reusable adapted FBX files and textures are provided in `Assets/Livestock` in this repository and the game download. They are expressly excluded from the general prohibition on extracting/reusing unrelated licensed assets. See `Licenses/Livestock-Attribution.md`, the original 0 A.D. notice and CREDITS.md.
+
 CC0 contributors are named voluntarily in CREDITS.md. CC BY recordings retain author attribution, original source and licence links, with changes described. In particular, Michel Baradari's pain/death recordings, Blender Foundation/Lamoot's waterfall and stream recordings, and the credited horse-sound sources retain their individual notices. No endorsement is implied.
 
 Poly Haven, Kenney, Quaternius/Gonzalo Furnier, crownjoshua, Lyndon Daniels/ChadM, RandomMind, Corsica_S, Iwan Gabovitch/qubodup, remaxim, Independent.nu, Ben Jaszczak and Brian Nelson are credited for the relevant models, textures, animations, music and recordings in CREDITS.md. Historical credits also retain contributors to superseded assets.

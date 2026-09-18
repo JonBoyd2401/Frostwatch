@@ -95,3 +95,7 @@ Under continued human direction, AI authored road-material/mask changes and plac
 ## 0.5.7 update
 
 The human specifically challenged the square caves and isolated water source, requested the hidden waterfall connection, and required the river to continue beyond the map. AI implemented and iterated the geometry, collision, passage code, tests and release under that direction. Existing asset creators retain credit. The earlier model/token/time audit remains dated and excludes this pass; no new total is inferred. Automated checks and AI visual review are not ordinary human playtesting.
+
+### Village livestock — 18 September 2026
+
+The human requested cows, pigs and sheep tended by village farmers and asked for realistic models. The AI selected free attributed assets, converted the rigs and animations, implemented ambient movement and farmer tending, inspected packaged screenshots and ran the regression/release tools. These modest game models and existing idle human poses remain below bespoke high-end animal/hand-feeding animation quality. Source artists retain full credit. The earlier model/token/time audit remains dated; this pass is not included in those totals.
