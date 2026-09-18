@@ -68,3 +68,9 @@ Six added actors total 1,164 triangles and add no lights. Day/night castle views
 ## 0.5.6 world regression
 
 The road material adds two texture samples using existing textures; 200 decorative instances share four mesh groups with 55–90 metre culling. No new lights. On this Omen at Balanced, 1280 × 720, 85% render scale, uncapped and with the live world enabled, the moving woodland/northern-road regression recorded 91.5 seconds after warmup and 287.6 metres of travel: mean 68.9 FPS, p95 19.50 ms, worst 67.58 ms, 2 frames above 50 ms, and peak recorded GPU-memory demotion 0.00 MiB. Whole-capture measurements are used rather than the final short window. This route does not cover the entire map or castle battle, mounted travel, save latency or other PCs. Stationary castle/day/night and village captures passed memory guards; they are not evidence of a whole-game FPS improvement.
+
+## 0.5.7 exploration regression
+
+On the development Omen, Balanced, 1280 × 720, 85% render scale, uncapped with the live world enabled: the woodland/northern-road run covered 287.9 metres and recorded 91.5 seconds after warmup. Mean 71.0 FPS, p95 18.83 ms, p99 21.86 ms, worst 109.13 ms; 2 frames above 50 ms, 1 above 100 ms, peak recorded GPU-memory demotion 0.00 MiB. These are whole-capture results. Separate stationary cave/water views passed resource guards. The route is not a moving cave endurance test, full-world benchmark or other-hardware guarantee.
+
+The close view directly beneath the waterfall averaged 44.7 FPS (p95 24.26 ms), with no recorded over-budget state in that capture. The water layers are a heavier local view than the cave interiors. An earlier rejected candidate recorded 230.46 MiB of peak GPU-memory demotion on the moving route. The accepted run above follows bounded cave draw distances and reduced per-section Lumen card counts; the initial failure is retained locally rather than treated as a passing run.

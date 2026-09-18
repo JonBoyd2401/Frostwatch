@@ -91,3 +91,7 @@ AI authored the focused castle additions and gate logic under continued human di
 ## 0.5.6 update
 
 Under continued human direction, AI authored road-material/mask changes and placed the focused castle verges, then ran regression captures and inspected them. Existing library creators retain credit. The earlier model/token/time audit remains dated and excludes this pass; no additional total is inferred.
+
+## 0.5.7 update
+
+The human specifically challenged the square caves and isolated water source, requested the hidden waterfall connection, and required the river to continue beyond the map. AI implemented and iterated the geometry, collision, passage code, tests and release under that direction. Existing asset creators retain credit. The earlier model/token/time audit remains dated and excludes this pass; no new total is inferred. Automated checks and AI visual review are not ordinary human playtesting.

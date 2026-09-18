@@ -101,3 +101,7 @@ Castle light components and their night intensities are cached once by the exist
 ## 0.5.6 roads and verges
 
 The existing masked road material uses temporal coverage for its edge, four texture samples (two albedo, two normal) from the existing rocky-soil set, rotated/scaled world coordinates, wheel-track roughness and low-frequency colour variation. Balanced/Performance use TAA; higher presets use TSR. The existing 2048-pixel ground mask has a wider blurred wear channel. Four instanced mesh groups add 200 decorative plants/stones around the castle. No new lights, texture sets, terrain-height changes, route changes, save-schema changes or C++ changes.
+
+## 0.5.7 water and cave construction
+
+Rounded cave shells are generated from the existing connection graph using an implicit surface and marching tetrahedra, split into independently bounded sections: 270,096 triangles across the three areas. Triplanar rock colour/normal sampling uses existing pack textures. New collision follows the visible shells; the established floor and old backing collision are retained. A carved river modifies 558 heightfield samples; the bridge retains road travel. Existing foliage is fitted from retained original transforms to avoid repeated offset drift. The hidden passage table is staged as game data; travel validates proximity, combat/mount state and a floor/capsule-safe destination before moving. Discovery uses the existing flag list without a save schema change.
