@@ -87,3 +87,7 @@ AI implemented and verified visible supply-delivery and rescued-mentor consequen
 ## 0.5.5 update
 
 AI authored the focused castle additions and gate logic under continued human direction. Existing creators retain credit for reused materials/assets. The earlier token/time audit remains dated and excludes this work; no new total is inferred. Automated checks and AI screenshot review are not human playtesting.
+
+## 0.5.6 update
+
+Under continued human direction, AI authored road-material/mask changes and placed the focused castle verges, then ran regression captures and inspected them. Existing library creators retain credit. The earlier model/token/time audit remains dated and excludes this pass; no additional total is inferred.

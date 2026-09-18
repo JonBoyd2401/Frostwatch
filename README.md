@@ -2,11 +2,19 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.5-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.6-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.5
+## New in 0.5.6
+
+- Softer road edges, wider worn-ground shoulders and mixed texture scales across the existing road network.
+- Clustered winter grass, shrubs and grounded stones around the castle approach, using existing library scenery.
+- 252 packaged regression checks, inspected before/after and night views, and a measured moving-route memory/performance check.
+
+See [scope and verification](WORLD-VERGES.md), [castle before](Screenshots/world-castle-before.png) / [after](Screenshots/world-castle-after.png), and [road before](Screenshots/world-road-before.png) / [after](Screenshots/world-road-after.png).
+
+## Previously added in 0.5.5
 
 - A barred prison entrance with a gate that opens after defeating Ste Chlomaine, including compatible behaviour for existing saves.
 - A gatehouse gallery, arrow slits and parapet detail above the main entrance; storage bays along the courtyard edge.
@@ -57,7 +65,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.5-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.6-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -66,7 +74,7 @@ If Windows reports a missing Visual C++ runtime, run the included **Prerequisite
 
 ## Minimum and recommended PC specifications
 
-These are **provisional requirements for preview 0.5.5**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+These are **provisional requirements for preview 0.5.6**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
 
 | Component | Minimum — provisional | Recommended — provisional |
 | --- | --- | --- |

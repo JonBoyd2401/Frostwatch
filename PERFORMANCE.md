@@ -64,3 +64,7 @@ The live combat benchmark retained 24 gameplay samples but disabled the 24 mid-f
 ## 0.5.5 castle regression
 
 Six added actors total 1,164 triangles and add no lights. Day/night castle views passed the recent-window texture/GPU-memory guards at Balanced, 1280 × 720 and 85% render scale on the Omen. These are stationary capture checks. The separate live combat regression, with a 60 FPS cap and no intermediate PNG exports, recorded 21.5 seconds after warmup: mean 56.9 FPS, p95 20.11 ms, worst 31.39 ms, 0 frames above 50 ms and peak recorded GPU-memory demotion 0.00 MiB. This does not measure a full castle battle, moving-route endurance or save latency. The earlier 0.5.4 moving-route results remain dated evidence, not a new 0.5.5 route test.
+
+## 0.5.6 world regression
+
+The road material adds two texture samples using existing textures; 200 decorative instances share four mesh groups with 55–90 metre culling. No new lights. On this Omen at Balanced, 1280 × 720, 85% render scale, uncapped and with the live world enabled, the moving woodland/northern-road regression recorded 91.5 seconds after warmup and 287.6 metres of travel: mean 68.9 FPS, p95 19.50 ms, worst 67.58 ms, 2 frames above 50 ms, and peak recorded GPU-memory demotion 0.00 MiB. Whole-capture measurements are used rather than the final short window. This route does not cover the entire map or castle battle, mounted travel, save latency or other PCs. Stationary castle/day/night and village captures passed memory guards; they are not evidence of a whole-game FPS improvement.

@@ -97,3 +97,7 @@ Edrin's rescued flag reconstructs his Hearthmere placement on loading. During pl
 Six authored mesh actors reuse owned materials with metre-scale UVs. The gate alone is movable; its open/closed transform is derived from existing jailer/rescue records and changes only when state changes or restores. Capsule-sweep tests verify blocking and entry clearance. Geometry authoring is repeatable and backs up the original map. No save schema changes or new lights.
 
 Castle light components and their night intensities are cached once by the existing weather actor. Exterior lamps and accents follow its smooth daylight factor; interior lights remain enabled. Prison lamp power/radius and the exterior clue light are bounded separately to reduce the overexposure found in the initial captures.
+
+## 0.5.6 roads and verges
+
+The existing masked road material uses temporal coverage for its edge, four texture samples (two albedo, two normal) from the existing rocky-soil set, rotated/scaled world coordinates, wheel-track roughness and low-frequency colour variation. Balanced/Performance use TAA; higher presets use TSR. The existing 2048-pixel ground mask has a wider blurred wear channel. Four instanced mesh groups add 200 decorative plants/stones around the castle. No new lights, texture sets, terrain-height changes, route changes, save-schema changes or C++ changes.
