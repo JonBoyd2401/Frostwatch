@@ -83,3 +83,7 @@ Continuing the human-authorised readiness programme, AI implemented save verific
 ## 0.5.4 update
 
 AI implemented and verified visible supply-delivery and rescued-mentor consequences under the human's ongoing direction to complete the readiness programme economically. Existing assets and synthetic character voices were retained. The earlier token/processing-time audit remains dated and excludes this later work; no new total is inferred. Scripted diagnostics are not external human playtesting.
+
+## 0.5.5 update
+
+AI authored the focused castle additions and gate logic under continued human direction. Existing creators retain credit for reused materials/assets. The earlier token/time audit remains dated and excludes this work; no new total is inferred. Automated checks and AI screenshot review are not human playtesting.

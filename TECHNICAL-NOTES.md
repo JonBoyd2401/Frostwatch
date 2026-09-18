@@ -91,3 +91,9 @@ Performance/Balanced limit concurrent texture replacement memory to 16 MiB inste
 A per-world cache associates the two existing supply interactables with their existing crate actors by mesh and proximity. Quest flags select uncollected, carried or delivered presentation; no additional scenery is spawned. Delivered props use static-world traces and their mesh bounds to align their base with the ground. Hidden collection targets are excluded from interaction and HUD prompts.
 
 Edrin's rescued flag reconstructs his Hearthmere placement on loading. During play, relocation waits until the player is outside the prison area and has closed menus. His inn route is computed once against static collision in a bounded Hearthmere grid and cached for reuse, with extra capsule clearance and a floor-height path through the west doorway. Fresh expeditions reset original transforms and routines. No save schema migration or new art/audio purchase is required. The new crate inspection text has no NPC recording; existing character speech is retained.
+
+## 0.5.5 castle structure
+
+Six authored mesh actors reuse owned materials with metre-scale UVs. The gate alone is movable; its open/closed transform is derived from existing jailer/rescue records and changes only when state changes or restores. Capsule-sweep tests verify blocking and entry clearance. Geometry authoring is repeatable and backs up the original map. No save schema changes or new lights.
+
+Castle light components and their night intensities are cached once by the existing weather actor. Exterior lamps and accents follow its smooth daylight factor; interior lights remain enabled. Prison lamp power/radius and the exterior clue light are bounded separately to reduce the overexposure found in the initial captures.
