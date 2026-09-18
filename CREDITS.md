@@ -178,3 +178,7 @@ Frostwatch uses Unreal® Engine. Unreal® is a trademark or registered trademark
 **Sheep (rigged, textured and animated)** by **p0ss**, https://opengameart.org/content/sheep-rigged-textured-and-animated , supplies the sheep mesh, packed texture and original animation clips. The creator credits the boar base texture to **titus tscharntke**, from https://opengameart.org/content/woodland-animals-texture-pack . Licensed under **CC BY-SA 3.0**, https://creativecommons.org/licenses/by-sa/3.0/ . Frostwatch selects one wool variant, reconnects the packed texture, converts the rig and three animations to FBX, and adjusts the material and scale. The adapted sheep assets retain the same licence. These creators do not endorse Frostwatch.
 
 No animal assets were purchased.
+
+## Reused cave and pool assets — 0.5.9
+
+The buried entrances and ridges reuse **Icelandic Boulder by Quixel/Megascans**, already acquired with the owned Medieval Village scenery. **Water Materials by tharlevfx** supplies the stone colour/normal textures used by the adapted cave material and the existing waterfall/water effects. **Procedural Nature Seasons Pack by PurePolygons** supplies the existing surrounding ground and snow textures. Frostwatch adds its own generated tunnel meshes, terrain shaping, material adaptation, placement, collision and swimming logic. These adaptations do not change the original assets' applicable Fab/Epic licence terms. No new purchase was made for this pass.

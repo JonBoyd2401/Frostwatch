@@ -1,4 +1,4 @@
-# Performance — preview 0.5.8
+# Performance — preview 0.5.9
 
 ## New moving and combat checks
 
@@ -103,3 +103,20 @@ Two woodland/northern-road moving runs used the same settings and scripted route
 | Peak GPU-memory demotion, MiB | 3.84 | 2.91 |
 
 Both runs contain brief demotion and hitches; these remain unresolved preview limitations. Neither ended in an over-budget state. The final-window GPU budgets were 1990.3 and 2017.9 MiB respectively, so these are not identical resource conditions. No specific cause or performance improvement is inferred. These are limited regression routes, not whole-map, mounted-travel, saving, thermal-endurance or other-hardware acceptance. Diagnostic capture mode disables normal autosaves.
+
+## 0.5.9 cave and outdoor traversal
+
+On the development Omen (i7-8750H, GTX 1060 3 GB, 32 GB RAM), Balanced, 1280 × 720, 85% render scale, uncapped with live NPC simulation and controlled daylight. The cave run uses the lantern. No builds or asset imports ran during either capture. Whole-capture figures exclude the first eight seconds; normal autosaves are disabled in diagnostic capture mode.
+
+| Whole-capture measurement | Woodland/northern road | Hollow descent |
+| --- | ---: | ---: |
+| Measured seconds | 91.5 | 101.5 |
+| Mean FPS | 70.6 | 62.6 |
+| p95 frame time, ms | 19.31 | 27.86 |
+| p99 frame time, ms | 22.44 | 39.75 |
+| Worst frame, ms | 61.65 | 654.46 |
+| Frames above 50 ms | 1 | 4 |
+| Frames above 100 ms | 0 | 1 |
+| Peak GPU-memory demotion, MiB | 0.00 | 0.00 |
+
+Neither capture ended in an over-budget state. Whole-session demotion and slow frames are reported above even when the final resource check passes. An earlier candidate failed the outdoor memory guard with 29.58 MiB peak demotion, 8.83 MiB recent demotion and a 669.95 ms worst frame. A subsequent run still failed with 15.07 MiB peak and 12.78 MiB recent demotion despite the coarser tunnel distance fields. The final revision also reduced the Performance/Balanced Nanite streaming pool from 64 to 32 MiB before repeating the measurements above; texture pools and the verified Lumen atlas size were retained. These are observed revisions and measurements, not an isolated attribution of every change in frame time. These are two limited regression routes, not whole-map, mounted travel, saving, thermal-endurance or other-hardware acceptance. There is no matched earlier cave-walking baseline, so no measured FPS improvement is claimed. Earlier 0.5.8 hitches remain part of the historical evidence. Seven separate stationary views checked the cave exteriors, passages and waterfall pool; stationary camera results are not walking performance guarantees.

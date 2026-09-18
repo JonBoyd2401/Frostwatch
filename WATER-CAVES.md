@@ -1,5 +1,7 @@
 # Water, natural caves and hidden passages — 0.5.7 preview
 
+> Historical 0.5.7 notes. The portal transitions below are superseded by the physical tunnels and swimming in [0.5.9](CAVES-SWIMMING.md).
+
 The Hollow of the Witnesses now has continuous rounded tunnels and chambers with irregular wall and ceiling profiles. The visible rectangular shell is replaced while the original 99-cell puzzle connections remain. Ashfang and Wyrmcrag also receive rounded interior surfaces. World-scale rock shading and continuous stone floors reduce the old tiled, overlapping snow appearance. Coloured mineral formations distinguish the existing witness/relic destinations; no quest rewards or puzzle requirements were replaced.
 
 The owned Water Materials waterfall keeps its layered falling water and local ambience, with adjusted foam/opacity and a moving impact patch. Its upper channel now joins a river carved through the hills, continuing 62.3 metres beyond the terrain boundary. One stone crossing maintains the existing road. 231 nearby foliage instances were fitted to the changed banks; 55 inside the wet channel were hidden.

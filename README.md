@@ -2,11 +2,18 @@
 
 A free, single-player fantasy adventure for Windows, built in Unreal Engine. Explore a winter vale, recover three broken oaths, free Edrin and confront the rulers of Frostwatch.
 
-**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.8-preview)**
+**[Download the Windows preview](https://github.com/JonBoyd2401/Frostwatch/releases/tag/v0.5.9-preview)**
 
 This is a playable development preview. Performance and animation polish are still being improved; it is not a finished commercial release.
 
-## New in 0.5.8
+## New in 0.5.9
+
+- Cave entrances sit within hills, with the old exposed shells hidden by terrain.
+- Walk continuously between the waterfall chamber and all three caves through a connected underground network, including two loops and four dead-end branches.
+- Swim in the waterfall pool with automatic flotation, normal movement, faster swimming on Sprint and an upward push on Jump; the western bank provides a clear exit.
+- Existing puzzles, quests and saves are retained. See [scope, verification and screenshots](CAVES-SWIMMING.md).
+
+## Previously added in 0.5.8
 
 - Cows, pigs and sheep at all three villages, alongside the existing horses and carts.
 - Textured, rigged models with idle, walking and feeding animations; farmers visit the livestock during their work routines.
@@ -19,7 +26,7 @@ See [scope and verification](LIVESTOCK.md), [Hearthmere farm](Screenshots/farm-h
 
 - Rounded, irregular cave interiors replace the main labyrinth's square-room appearance; Ashfang and Wyrmcrag gain shaped interiors too.
 - A longer river above the waterfall runs through a carved valley and beyond the map edge, with a stone road crossing.
-- A secret chamber behind the falls connects to all three cave areas through two-way passage transitions.
+- A secret chamber behind the falls originally connected through passage transitions; 0.5.9 replaces those with continuous walking routes.
 - Existing puzzle routes, rewards and saves are retained; water collision, passage arrivals and road access are regression checked.
 
 See [details and verification](WATER-CAVES.md), [cave before](Screenshots/cave-before.png) / [after](Screenshots/cave-after.png), [the upper river](Screenshots/river-after.png) and [the hidden chamber (spoiler)](Screenshots/veil-secret.png).
@@ -83,7 +90,7 @@ The library waterfall, animated dragons, regional climates, ordinary-enemy respa
 
 Development documentation: [technical notes](TECHNICAL-NOTES.md) and [AI-led development, models, token burn and processing time](AI-DEVELOPMENT.md). The human directed and challenged the project through many iterations; AI performed most implementation. Original asset creators receive their own credits.
 
-1. Open the release above and download **Frostwatch-Windows-v0.5.8-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
+1. Open the release above and download **Frostwatch-Windows-v0.5.9-preview.zip**. GitHub's automatic “Source code” downloads do not contain the game.
 2. Extract the complete ZIP into a writable folder. Keep its Engine and Frostwatch folders alongside the launcher.
 3. Run **Play-Frostwatch.cmd**. You do not need Unreal Editor, an Epic account or a game account.
 4. Choose **New game**. The opening explains your first objective and directs you to Captain Rowan.
@@ -92,7 +99,7 @@ If Windows reports a missing Visual C++ runtime, run the included **Prerequisite
 
 ## Minimum and recommended PC specifications
 
-These are **provisional requirements for preview 0.5.8**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
+These are **provisional requirements for preview 0.5.9**, not certified compatibility or frame-rate guarantees. Only the development laptop has been tested: Windows 11, Core i7-8750H, GeForce GTX 1060 3 GB and 32 GB RAM. The 16 GB minimum and recommended configuration below are engineering estimates pending wider testing.
 
 | Component | Minimum — provisional | Recommended — provisional |
 | --- | --- | --- |

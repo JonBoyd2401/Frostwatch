@@ -99,3 +99,7 @@ The human specifically challenged the square caves and isolated water source, re
 ### Village livestock — 18 September 2026
 
 The human requested cows, pigs and sheep tended by village farmers and asked for realistic models. The AI selected free attributed assets, converted the rigs and animations, implemented ambient movement and farmer tending, inspected packaged screenshots and ran the regression/release tools. These modest game models and existing idle human poses remain below bespoke high-end animal/hand-feeding animation quality. Source artists retain full credit. The earlier model/token/time audit remains dated; this pass is not included in those totals.
+
+### Buried caves and swimming — 18 September 2026
+
+The human challenged the exposed cave structures and portal-based connections, then reported being trapped in the waterfall pool and asked for swimming. AI implemented the terrain cover, physical tunnel network, collision repairs, swimming behaviour, diagnostics and release work under that direction. Failed checks exposed overlapping supports, floor joins and solid visual water surfaces, which were repaired before release. Existing asset creators retain credit. The earlier model/token/processing-time audit remains explicitly dated and does not include this pass; no new total is inferred. Automated movement and AI screenshot review remain distinct from ordinary human playtesting.
